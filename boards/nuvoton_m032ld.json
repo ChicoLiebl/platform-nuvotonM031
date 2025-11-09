@@ -1,0 +1,30 @@
+{
+    "build": {
+      "cpu": "cortex-m0",
+      "f_cpu": "48000000L",
+      "mcu": "m031ld2ae",
+      "extra_flags": "-D__M031__",
+      "ldscript": "M032LD2AE.ld",
+      "variant": "M031"
+    },
+    "debug": {
+      "default_tools": [
+        "stlink"
+      ],
+      "onboard_tools": [
+        "stlink"
+      ],
+      "svd_path": "M031.svd"
+    },
+    "name": "Nuvoton M031",
+    "upload": {
+      "maximum_ram_size": 16384,
+      "maximum_size": 131072,
+      "protocol": "nuvoton-isp",
+      "protocols": [
+        "nuvoton-isp"
+      ]
+    },
+    "url": "https://www.nuvoton.com/products/microcontrollers/arm-cortex-m0-mcus/m031-series/",
+    "vendor": "Nuvoton"
+  }

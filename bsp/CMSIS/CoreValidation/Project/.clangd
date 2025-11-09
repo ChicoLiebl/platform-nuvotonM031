@@ -1,0 +1,4 @@
+CompileFlags:
+  CompilationDatabase: >-
+    /home/chico/WOW/platform-nuvotonm031/bsp/CMSIS/CoreValidation/Project/out/Validation/CM0/none
+  Add: []
