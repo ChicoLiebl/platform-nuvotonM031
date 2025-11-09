@@ -128,28 +128,15 @@ bsp_include_paths = [
 ]
 add_includes(env, bsp_include_paths)
 
-build_bsp(env)
-
-# 2. Source Files
-# add_sources(env,
-#     os.path.join(env['BUILD_DIR'], "bsp", "Device", "M031"),
-#     os.path.join(env['BUILD_DIR'], "bsp", "Device", "M031", "Source"))
-
-# add_sources(env,
-#     os.path.join(env['BUILD_DIR'], "bsp", "StdDriver"),
-#     os.path.join(env['BUILD_DIR'], "bsp", "StdDriver", "src"))
-
-# add_sources(env,
-#     os.path.join(env['BUILD_DIR'], "bsp", "Device", "M031", "Startup"),
-#     os.path.join(env['BUILD_DIR'], "bsp", "Device", "M031", "Source", "GCC"))
-# Add startup files here if not already included
-
-
-# 3. Preprocessor Definitions (if needed)
+# Preprocessor Definitions (if needed)
 bsp_defines = [
     # Add BSP-specific defines here, if any
 ]
 add_defines(env, bsp_defines)
+
+# --- Build BSP ---
+build_bsp(env)
+
 
 # --- Build Program ---
 
